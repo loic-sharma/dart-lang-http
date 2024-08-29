@@ -32,8 +32,9 @@ let package = Package(
             ],
             cSettings: [
                 // TODO: Update your plugin name.
-                .headerSearchPath("include")
-                .headerSearchPath("include/cupertino_http")
+                //.headerSearchPath("include"),
+                .headerSearchPath("include/cupertino_http"),
+                .unsafeFlags(["-fno-objc-arc"]),
             ]
         )
     ]
